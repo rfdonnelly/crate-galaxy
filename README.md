@@ -2,7 +2,7 @@
 
 Render crate dependencies as a galaxy.
 
-https://rfdonnelly.github.io/crate-galaxy
+[View the Crate Galaxy](https://rfdonnelly.github.io/crate-galaxy)
 
 ## Credits
 
