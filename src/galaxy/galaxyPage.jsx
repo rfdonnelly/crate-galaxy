@@ -22,11 +22,8 @@ function galaxyPage(x) {
   };
 
   function loadGraphIfRouteChanged() {
-    var routeChanged = x.props.params.name !== currentPath;
-    if (routeChanged) {
-      currentPath = x.props.params.name;
-      appEvents.downloadGraphRequested.fire(currentPath);
-    }
+    currentPath = "crates.io";
+    appEvents.downloadGraphRequested.fire(currentPath);
     appEvents.queryChanged.fire();
   }
 }

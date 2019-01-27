@@ -11,8 +11,7 @@ import { Router, Route, browserHistory } from 'react-router';
 
 render(
   <Router history={browserHistory}>
-    <Route path='/' component={WelcomePage}/>
-    <Route path='/galaxy/:name' component={GalaxyPage} />
+    <Route path='/' component={GalaxyPage}/>
   </Router>,
   document.getElementById('app')
 );
