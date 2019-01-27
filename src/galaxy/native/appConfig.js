@@ -182,7 +182,12 @@ function appConfig() {
       w: getNumber(query.lw || 1)
     };
 
-    var showLinks = (query.l === '1');
+    var showLinks = true;
+    if (query.l === '1') {
+      showLinks = true;
+    } else if (query.l === '0') {
+      showLinks = false;
+    }
 
     return {
       pos: normalize(pos),
